@@ -1,148 +1,20 @@
 {
-  "platform": {
-    "id": "woodyboy",
-    "name": "WoodyBoy Platform",
-    "version": "8.2 Smart CMS + WoodyBoy Stage II"
-  },
   "project": {
-    "id": "elkass",
-    "name": "ELKASS Olesno",
-    "phone": "34 358 24 42",
-    "email": "kontakt@elkass.pl",
-    "address": "Olesno",
-    "tagline": "RTV / AGD / MULTIMEDIA / SERWIS"
+    "name": "ELKASS OLESNO",
+    "phone": "+48 34 358 20 20",
+    "address": "Olesno, ul. Pieloka 20",
+    "tagline": "RTV / AGD / AGD DO ZABUDOWY"
   },
-  "settings": {
-    "theme": "premium-dark",
-    "appearance": "premium",
-    "showAdminLink": true,
-    "stage": "II",
-    "smartCms": true,
-    "smartMediaEngine": true,
-    "homeBuilder": true
-  },
-  "homeSections": [
-    {
-      "id": "hero",
-      "type": "hero",
-      "title": "Elektronika w najlepszym wydaniu",
-      "subtitle": "Premium lokalny sklep RTV/AGD",
-      "active": true,
-      "order": 1,
-      "style": "premium-dark",
-      "autoplay": false
-    },
-    {
-      "id": "modern",
-      "type": "feature",
-      "title": "Nowoczesna elektronika dla Twojego domu",
-      "subtitle": "Prosto, lokalnie i profesjonalnie",
-      "active": true,
-      "order": 2,
-      "style": "glass",
-      "autoplay": false
-    },
-    {
-      "id": "promotions",
-      "type": "product-carousel",
-      "title": "Promocje i hity",
-      "subtitle": "Aktualne oferty ELKASS",
-      "active": true,
-      "order": 3,
-      "source": "promo",
-      "layout": "four-cards",
-      "autoplay": true,
-      "interval": 5000
-    },
-    {
-      "id": "manufacturer",
-      "type": "brand-carousel",
-      "title": "Promocje producentów",
-      "subtitle": "Oferty marek i banery sezonowe",
-      "active": true,
-      "order": 4,
-      "source": "manufacturers",
-      "layout": "carousel",
-      "autoplay": true,
-      "interval": 4000
-    },
-    {
-      "id": "categories",
-      "type": "categories",
-      "title": "Oferta sklepu",
-      "subtitle": "Najpopularniejsze kategorie",
-      "active": true,
-      "order": 5,
-      "layout": "grid",
-      "autoplay": false
-    },
-    {
-      "id": "featured",
-      "type": "product-carousel",
-      "title": "Najczęściej wybierane",
-      "subtitle": "Inne produkty niż promocje",
-      "active": true,
-      "order": 6,
-      "source": "featured",
-      "layout": "four-cards",
-      "autoplay": false
-    },
-    {
-      "id": "why",
-      "type": "why",
-      "title": "Dlaczego ELKASS?",
-      "subtitle": "Doradztwo, transport, raty i wsparcie",
-      "active": true,
-      "order": 7,
-      "layout": "benefits",
-      "autoplay": false
-    },
-    {
-      "id": "opinions",
-      "type": "comments",
-      "title": "Opinie klientów",
-      "subtitle": "Zaufanie lokalnego sklepu",
-      "active": true,
-      "order": 8,
-      "layout": "cards",
-      "autoplay": true,
-      "interval": 6000
-    }
-  ],
-  "roles": [
-    {
-      "id": "superadmin",
-      "name": "SUPERADMIN",
-      "scope": "WoodyBoy Platform"
-    },
-    {
-      "id": "admin",
-      "name": "ADMIN",
-      "scope": "ELKASS"
-    },
-    {
-      "id": "editor",
-      "name": "EDITOR",
-      "scope": "ELKASS"
-    },
-    {
-      "id": "viewer",
-      "name": "VIEWER",
-      "scope": "ELKASS"
-    }
-  ],
   "categories": [
     {
       "id": "rtv",
       "name": "RTV",
-      "icon": "📺",
-      "description": "Telewizory, audio i multimedia",
-      "parent": null,
+      "icon": "▭",
+      "description": "Telewizory, audio, sprzęt multimedialny i akcesoria",
       "children": [
         "telewizory",
         "audio",
-        "soundbary",
-        "multimedia"
+        "soundbary"
       ],
       "home": true,
       "active": true
@@ -150,76 +22,25 @@
     {
       "id": "agd",
       "name": "AGD",
-      "icon": "❄️",
-      "description": "Sprzęt do domu i codziennego użytku",
-      "parent": null,
+      "icon": "◉",
+      "description": "Pralki, lodówki, zmywarki, piekarniki i więcej",
       "children": [
-        "lodowki",
         "pralki",
-        "zmywarki",
-        "zamrazarki",
-        "odkurzacze"
+        "lodowki",
+        "zmywarki"
       ],
       "home": true,
       "active": true
     },
     {
       "id": "agd-zabudowa",
-      "name": "AGD do zabudowy",
-      "icon": "🔥",
-      "description": "Sprzęt do nowoczesnej kuchni",
-      "parent": null,
+      "name": "AGD DO ZABUDOWY",
+      "icon": "▣",
+      "description": "Piekarniki, płyty, okapy, zmywarki do zabudowy",
       "children": [
         "piekarniki",
         "plyty-indukcyjne",
-        "plyty-gazowe",
-        "okapy",
-        "kuchnie"
-      ],
-      "home": true,
-      "active": true
-    },
-    {
-      "id": "male-agd",
-      "name": "Małe AGD",
-      "icon": "☕",
-      "description": "Czajniki, żelazka, tostery i drobny sprzęt",
-      "parent": null,
-      "children": [
-        "czajniki",
-        "zelazka",
-        "generatory-pary",
-        "tostery",
-        "golarki"
-      ],
-      "home": true,
-      "active": true
-    },
-    {
-      "id": "komputery-telefony",
-      "name": "Komputery i telefony",
-      "icon": "💻",
-      "description": "Laptopy, smartfony i akcesoria",
-      "parent": null,
-      "children": [
-        "laptopy",
-        "smartfony",
-        "tablety",
-        "akcesoria-it"
-      ],
-      "home": true,
-      "active": true
-    },
-    {
-      "id": "serwis",
-      "name": "Serwis i doradztwo",
-      "icon": "🛠️",
-      "description": "Pomoc techniczna, konfiguracja i wsparcie",
-      "parent": null,
-      "children": [
-        "serwis-rtv",
-        "serwis-agd",
-        "pomoc-techniczna"
+        "okapy"
       ],
       "home": true,
       "active": true
@@ -227,515 +48,246 @@
     {
       "id": "telewizory",
       "name": "Telewizory",
-      "icon": "📺",
-      "description": "Smart TV, 4K, QLED, OLED",
       "parent": "rtv",
-      "children": [],
-      "home": false,
+      "description": "Telewizory premium",
       "active": true
     },
     {
       "id": "audio",
       "name": "Audio",
-      "icon": "🔊",
-      "description": "Głośniki i zestawy audio",
       "parent": "rtv",
-      "children": [],
-      "home": false,
+      "description": "Audio i soundbary",
       "active": true
     },
     {
       "id": "soundbary",
       "name": "Soundbary",
-      "icon": "🎵",
-      "description": "Dźwięk premium do telewizora",
       "parent": "rtv",
-      "children": [],
-      "home": false,
-      "active": true
-    },
-    {
-      "id": "multimedia",
-      "name": "Multimedia",
-      "icon": "🎬",
-      "description": "Multimedia i akcesoria RTV",
-      "parent": "rtv",
-      "children": [],
-      "home": false,
-      "active": true
-    },
-    {
-      "id": "lodowki",
-      "name": "Lodówki",
-      "icon": "❄️",
-      "description": "Lodówki wolnostojące i No Frost",
-      "parent": "agd",
-      "children": [],
-      "home": false,
+      "description": "Dźwięk TV",
       "active": true
     },
     {
       "id": "pralki",
       "name": "Pralki",
-      "icon": "🧺",
-      "description": "Slim i pełnowymiarowe",
       "parent": "agd",
-      "children": [],
-      "home": false,
+      "description": "Pralki slim i pełne",
+      "active": true
+    },
+    {
+      "id": "lodowki",
+      "name": "Lodówki",
+      "parent": "agd",
+      "description": "No Frost i chłodnictwo",
       "active": true
     },
     {
       "id": "zmywarki",
       "name": "Zmywarki",
-      "icon": "🍽️",
-      "description": "45 cm i 60 cm",
       "parent": "agd",
-      "children": [],
-      "home": false,
-      "active": true
-    },
-    {
-      "id": "zamrazarki",
-      "name": "Zamrażarki",
-      "icon": "🧊",
-      "description": "Szufladowe i skrzyniowe",
-      "parent": "agd",
-      "children": [],
-      "home": false,
-      "active": true
-    },
-    {
-      "id": "odkurzacze",
-      "name": "Odkurzacze",
-      "icon": "🧹",
-      "description": "Klasyczne, pionowe i bezprzewodowe",
-      "parent": "agd",
-      "children": [],
-      "home": false,
+      "description": "45 i 60 cm",
       "active": true
     },
     {
       "id": "piekarniki",
       "name": "Piekarniki",
-      "icon": "🔥",
-      "description": "Piekarniki do zabudowy",
       "parent": "agd-zabudowa",
-      "children": [],
-      "home": false,
+      "description": "Piekarniki do zabudowy",
       "active": true
     },
     {
       "id": "plyty-indukcyjne",
       "name": "Płyty indukcyjne",
-      "icon": "⚡",
-      "description": "Szybkie i wygodne gotowanie",
       "parent": "agd-zabudowa",
-      "children": [],
-      "home": false,
-      "active": true
-    },
-    {
-      "id": "plyty-gazowe",
-      "name": "Płyty gazowe",
-      "icon": "🔥",
-      "description": "Klasyczne gotowanie",
-      "parent": "agd-zabudowa",
-      "children": [],
-      "home": false,
+      "description": "Indukcja",
       "active": true
     },
     {
       "id": "okapy",
       "name": "Okapy",
-      "icon": "🌬️",
-      "description": "Okapy kuchenne i podszafkowe",
       "parent": "agd-zabudowa",
-      "children": [],
-      "home": false,
-      "active": true
-    },
-    {
-      "id": "kuchnie",
-      "name": "Kuchnie",
-      "icon": "🍳",
-      "description": "Kuchnie wolnostojące",
-      "parent": "agd-zabudowa",
-      "children": [],
-      "home": false,
-      "active": true
-    },
-    {
-      "id": "czajniki",
-      "name": "Czajniki",
-      "icon": "☕",
-      "description": "Czajniki elektryczne",
-      "parent": "male-agd",
-      "children": [],
-      "home": false,
-      "active": true
-    },
-    {
-      "id": "zelazka",
-      "name": "Żelazka",
-      "icon": "👔",
-      "description": "Żelazka parowe i klasyczne",
-      "parent": "male-agd",
-      "children": [],
-      "home": false,
-      "active": true
-    },
-    {
-      "id": "generatory-pary",
-      "name": "Generatory pary",
-      "icon": "💨",
-      "description": "Prasowanie premium",
-      "parent": "male-agd",
-      "children": [],
-      "home": false,
-      "active": true
-    },
-    {
-      "id": "tostery",
-      "name": "Tostery",
-      "icon": "🍞",
-      "description": "Tostery do kuchni",
-      "parent": "male-agd",
-      "children": [],
-      "home": false,
-      "active": true
-    },
-    {
-      "id": "golarki",
-      "name": "Golarki",
-      "icon": "🪒",
-      "description": "Golarki i maszynki",
-      "parent": "male-agd",
-      "children": [],
-      "home": false,
-      "active": true
-    },
-    {
-      "id": "laptopy",
-      "name": "Laptopy",
-      "icon": "💻",
-      "description": "Do domu, szkoły i pracy",
-      "parent": "komputery-telefony",
-      "children": [],
-      "home": false,
-      "active": true
-    },
-    {
-      "id": "smartfony",
-      "name": "Smartfony",
-      "icon": "📱",
-      "description": "Telefony i akcesoria",
-      "parent": "komputery-telefony",
-      "children": [],
-      "home": false,
-      "active": true
-    },
-    {
-      "id": "tablety",
-      "name": "Tablety",
-      "icon": "📲",
-      "description": "Mobilna praca i rozrywka",
-      "parent": "komputery-telefony",
-      "children": [],
-      "home": false,
-      "active": true
-    },
-    {
-      "id": "akcesoria-it",
-      "name": "Akcesoria IT",
-      "icon": "⌨️",
-      "description": "Myszki, klawiatury i ładowarki",
-      "parent": "komputery-telefony",
-      "children": [],
-      "home": false,
+      "description": "Okapy kuchenne",
       "active": true
     }
   ],
   "products": [
     {
-      "id": "telewizor-samsung-55-4k",
-      "name": "Telewizor Samsung 55” 4K UHD",
+      "id": "telewizor-samsung-qe55",
+      "name": "Telewizor Samsung QE55QLED80T",
       "category": "telewizory",
-      "price": "2299 zł",
-      "oldPrice": "3065 zł",
-      "discount": "-25%",
-      "status": "available",
-      "stock": 3,
+      "price": "2 549,00 zł",
+      "oldPrice": "2 999,00 zł",
+      "discount": "-15%",
       "promo": true,
-      "promoType": "hit",
       "featured": true,
       "badges": [
+        "QLED",
         "55”",
-        "Smart TV",
-        "HDR10+",
-        "4K UHD"
+        "Smart TV"
       ],
       "features": [
-        "Smart TV",
-        "HDR10+",
-        "4K UHD",
+        "QLED",
         "55 cali",
-        "Dobry wybór do salonu"
+        "Smart TV",
+        "HDR"
       ],
-      "advisor": "Najlepiej sprawdzi się do salonu 20–30 m², sportu, filmów i codziennego Smart TV.",
+      "advisor": "Dobry wybór do salonu, filmów i sportu. Polecany dla klientów, którzy chcą mocny obraz i prostą obsługę.",
       "specs": {
-        "Typ": "Telewizor LED",
         "Przekątna": "55 cali",
-        "Rozdzielczość": "4K UHD",
-        "Smart TV": "Tak"
+        "Technologia": "QLED",
+        "Smart TV": "Tak",
+        "HDR": "Tak"
       },
-      "description": "Telewizor Samsung 55” 4K UHD to dobry wybór do salonu. Zapewnia duży obraz, wygodną obsługę i funkcje Smart TV.",
-      "media": {
-        "original": "media-originals/telewizor-samsung-55-4k.jpg",
-        "main": "assets/products/tv.svg",
-        "thumb": "assets/products/tv.svg",
-        "promo": "assets/products/tv.svg",
-        "pdf": "assets/products/tv.svg"
-      },
+      "description": "Telewizor Samsung QLED z bardzo dobrym obrazem, funkcjami Smart TV i eleganckim wyglądem.",
       "images": [
         "assets/products/tv.svg"
       ],
+      "media": {
+        "main": "assets/products/tv.svg",
+        "promo": "assets/products/tv.svg"
+      },
+      "stock": 2,
       "active": true
     },
     {
-      "id": "lodowka-tcl-rp318",
-      "name": "Lodówka TCL RP318BXE2",
-      "category": "lodowki",
-      "price": "1699 zł",
-      "oldPrice": "1931 zł",
-      "discount": "-12%",
-      "status": "available",
-      "stock": 2,
+      "id": "pralka-samsung-ww80",
+      "name": "Pralka Samsung WW80T554AAX",
+      "category": "pralki",
+      "price": "1 599,00 zł",
+      "oldPrice": "1 999,00 zł",
+      "discount": "-20%",
       "promo": true,
-      "promoType": "promotion",
       "featured": true,
       "badges": [
-        "No Frost",
-        "Pojemna",
-        "Cicha",
-        "LED"
+        "8 kg",
+        "Eco Bubble",
+        "1200 obr."
       ],
       "features": [
-        "Pełny No Frost",
-        "Pojemna chłodziarka",
-        "Cicha praca",
-        "Oświetlenie LED"
-      ],
-      "advisor": "Dobry wybór dla rodziny i kuchni, gdzie ważna jest pojemność oraz bezobsługowe rozmrażanie.",
-      "specs": {
-        "Wymiary": "185 x 59,5 x 63 cm",
-        "Pojemność": "219/99 l",
-        "No Frost": "Pełny No Frost",
-        "Poziom hałasu": "37 dB"
-      },
-      "description": "Lodówka TCL RP318BXE2 sprawdzi się w mieszkaniu i domu rodzinnym. Oferuje wygodną organizację żywności.",
-      "media": {
-        "original": "media-originals/lodowka-tcl-rp318.jpg",
-        "main": "assets/products/fridge.svg",
-        "thumb": "assets/products/fridge.svg",
-        "promo": "assets/products/fridge.svg",
-        "pdf": "assets/products/fridge.svg"
-      },
-      "images": [
-        "assets/products/fridge.svg"
-      ],
-      "active": true
-    },
-    {
-      "id": "pralka-beko-wue",
-      "name": "Pralka BEKO WUE7636XOA",
-      "category": "pralki",
-      "price": "1349 zł",
-      "oldPrice": "1606 zł",
-      "discount": "-16%",
-      "status": "available",
-      "stock": 4,
-      "promo": true,
-      "promoType": "bestseller",
-      "featured": true,
-      "badges": [
-        "7 kg",
-        "1200 obr.",
+        "8 kg",
+        "Eco Bubble",
         "Program szybki"
       ],
-      "features": [
-        "7 kg załadunku",
-        "1200 obr./min",
-        "Program szybki",
-        "Prosta obsługa"
-      ],
-      "advisor": "Praktyczny model do codziennego prania dla mieszkania, pary lub małej rodziny.",
+      "advisor": "Praktyczna pralka dla rodziny. Dobra pojemność i wygodne programy do codziennego prania.",
       "specs": {
-        "Załadunek": "7 kg",
+        "Załadunek": "8 kg",
         "Obroty": "1200 obr./min",
-        "Typ": "Wolnostojąca"
+        "Technologia": "Eco Bubble"
       },
-      "description": "Pralka BEKO do codziennego prania z programami dopasowanymi do różnych tkanin.",
-      "media": {
-        "original": "media-originals/pralka-beko-wue.jpg",
-        "main": "assets/products/washer.svg",
-        "thumb": "assets/products/washer.svg",
-        "promo": "assets/products/washer.svg",
-        "pdf": "assets/products/washer.svg"
-      },
+      "description": "Nowoczesna pralka Samsung z programami do codziennego prania i wygodną obsługą.",
       "images": [
         "assets/products/washer.svg"
       ],
+      "media": {
+        "main": "assets/products/washer.svg",
+        "promo": "assets/products/washer.svg"
+      },
+      "stock": 3,
       "active": true
     },
     {
-      "id": "zmywarka-bosch-60",
-      "name": "Zmywarka Bosch 60 cm",
-      "category": "zmywarki",
-      "price": "1899 zł",
-      "oldPrice": "2199 zł",
-      "discount": "-14%",
-      "status": "available",
-      "stock": 1,
-      "promo": false,
-      "promoType": "none",
+      "id": "odkurzacz-dyson-v15",
+      "name": "Odkurzacz Dyson V15 Detect",
+      "category": "odkurzacze",
+      "price": "2 699,00 zł",
+      "oldPrice": "2 999,00 zł",
+      "discount": "-10%",
+      "promo": true,
       "featured": true,
       "badges": [
-        "60 cm",
-        "Cicha",
-        "Oszczędna"
-      ],
-      "features": [
-        "60 cm",
-        "Cicha praca",
-        "Oszczędność wody"
-      ],
-      "advisor": "Najlepsza do pełnej kuchni i codziennego zmywania po rodzinnych posiłkach.",
-      "specs": {
-        "Szerokość": "60 cm",
-        "Typ": "Do zabudowy",
-        "Programy": "Auto, Eco, Szybki"
-      },
-      "description": "Zmywarka Bosch to praktyczny sprzęt do kuchni, który oszczędza czas i wodę.",
-      "media": {
-        "original": "media-originals/zmywarka-bosch-60.jpg",
-        "main": "assets/products/dishwasher.svg",
-        "thumb": "assets/products/dishwasher.svg",
-        "promo": "assets/products/dishwasher.svg",
-        "pdf": "assets/products/dishwasher.svg"
-      },
-      "images": [
-        "assets/products/dishwasher.svg"
-      ],
-      "active": true
-    },
-    {
-      "id": "piekarnik-samsung-nv7",
-      "name": "Piekarnik Samsung NV7B44305AK",
-      "category": "piekarniki",
-      "price": "1799 zł",
-      "oldPrice": "2367 zł",
-      "discount": "-24%",
-      "status": "available",
-      "stock": 2,
-      "promo": true,
-      "promoType": "new",
-      "featured": false,
-      "badges": [
-        "Termoobieg",
-        "Air Fry",
+        "Bezprzewodowy",
+        "Mocny",
         "Premium"
       ],
       "features": [
-        "Termoobieg",
-        "Air Fry",
-        "Nowoczesny design"
+        "Bezprzewodowy",
+        "Mocne ssanie",
+        "Do domu"
       ],
-      "advisor": "Dla kuchni, w której ważna jest wygoda pieczenia i nowoczesny wygląd zabudowy.",
+      "advisor": "Dla klientów, którzy chcą wygodne sprzątanie bez kabla i wysoką skuteczność.",
       "specs": {
-        "Typ": "Do zabudowy",
-        "Funkcje": "Termoobieg, Grill, Air Fry"
+        "Typ": "Bezprzewodowy",
+        "Zastosowanie": "Dom / mieszkanie"
       },
-      "description": "Piekarnik do nowoczesnej kuchni z funkcjami wygodnego pieczenia.",
-      "media": {
-        "original": "media-originals/piekarnik-samsung-nv7.jpg",
-        "main": "assets/products/oven.svg",
-        "thumb": "assets/products/oven.svg",
-        "promo": "assets/products/oven.svg",
-        "pdf": "assets/products/oven.svg"
-      },
+      "description": "Odkurzacz pionowy premium do wygodnego sprzątania domu.",
       "images": [
-        "assets/products/oven.svg"
+        "assets/products/vacuum.svg"
       ],
+      "media": {
+        "main": "assets/products/vacuum.svg",
+        "promo": "assets/products/vacuum.svg"
+      },
+      "stock": 1,
+      "active": true
+    },
+    {
+      "id": "ekspres-delonghi-ecam",
+      "name": "Ekspres De’Longhi ECAM 550.65.SB",
+      "category": "male-agd",
+      "price": "2 799,00 zł",
+      "oldPrice": "3 299,00 zł",
+      "discount": "-15%",
+      "promo": true,
+      "featured": true,
+      "badges": [
+        "Kawa",
+        "Automat",
+        "Premium"
+      ],
+      "features": [
+        "Automatyczny",
+        "Cappuccino",
+        "Latte"
+      ],
+      "advisor": "Dla miłośników kawy, którzy chcą wygodny ekspres automatyczny do domu.",
+      "specs": {
+        "Typ": "Automatyczny",
+        "Napoje": "Espresso, Latte, Cappuccino"
+      },
+      "description": "Ekspres automatyczny De’Longhi do kaw mlecznych i klasycznych.",
+      "images": [
+        "assets/products/coffee.svg"
+      ],
+      "media": {
+        "main": "assets/products/coffee.svg",
+        "promo": "assets/products/coffee.svg"
+      },
+      "stock": 2,
       "active": true
     }
   ],
   "comments": {
-    "telewizory": [
-      "Dobra pomoc przy wyborze wielkości telewizora do salonu.",
-      "Sprzedawca wyjaśnił różnice między 4K, HDR i Smart TV.",
-      "Zakup lokalnie, szybko i konkretnie."
-    ],
-    "lodowki": [
-      "Pomogli dobrać lodówkę pod wymiary kuchni.",
-      "No Frost został jasno wyjaśniony.",
-      "Dobry kontakt i szybka dostępność."
-    ],
-    "pralki": [
-      "Pralka dobrana do małej łazienki.",
-      "Obsługa wyjaśniła programy i pojemność.",
-      "Dobry zakup do codziennego prania."
-    ],
     "default": [
-      "Bardzo dobra obsługa i konkretna pomoc.",
-      "Doceniam lokalny sklep i szybką odpowiedź.",
-      "Sprzęt dobrany do potrzeb."
+      "Profesjonalna obsługa i szybka pomoc przy wyborze.",
+      "Dobry kontakt i lokalny sklep, do którego warto wrócić.",
+      "Sprzęt dobrany do potrzeb, bez wciskania na siłę."
     ]
   },
-  "manufacturers": [
+  "homeSections": [
     {
-      "id": "samsung",
-      "name": "Samsung",
-      "badge": "Smart TV / AGD",
+      "id": "hero",
       "active": true
     },
     {
-      "id": "bosch",
-      "name": "Bosch",
-      "badge": "AGD do domu",
+      "id": "promotions",
       "active": true
     },
     {
-      "id": "beko",
-      "name": "Beko",
-      "badge": "Pralki i kuchnia",
-      "active": true
-    },
-    {
-      "id": "tcl",
-      "name": "TCL",
-      "badge": "Telewizory i chłodnictwo",
+      "id": "categories",
       "active": true
     }
   ],
-  "mediaEngine": {
-    "supportedFormats": [
-      "jpg",
-      "jpeg",
-      "png",
-      "webp",
-      "heic",
-      "avif"
-    ],
-    "variants": [
-      "original",
-      "thumb",
-      "product",
-      "promo",
-      "slider",
-      "mobile",
-      "desktop",
-      "pdf"
-    ],
-    "note": "Etap II zawiera UI i lokalny mechanizm podglądu. Produkcyjne przetwarzanie plików będzie w Etapie III przez Supabase/Edge Functions."
-  }
+  "manufacturers": [
+    {
+      "name": "Samsung"
+    },
+    {
+      "name": "Bosch"
+    },
+    {
+      "name": "Beko"
+    },
+    {
+      "name": "TCL"
+    }
+  ]
 }
