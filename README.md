@@ -1,24 +1,36 @@
-# ELKASS 8.1 PREMIUM FOUNDATION — STAGE I
+# ELKASS 8.2 SMART CMS + WOODYBOY — STAGE II
 
-Pierwsza paczka nowego ELKASS 8.x do pokazania szefowi.
+Drugi etap nowej architektury ELKASS 8.x.
 
-## Co zawiera
-- Premium Dark + Gold UI w kierunku zaakceptowanej makiety.
-- Strona główna: hero, nowoczesna elektronika, 4 promocje, kategorie, najczęściej wybierane, dlaczego ELKASS.
-- Jeden routing kategorii: `category.html?cat=rtv`.
-- Jeden routing produktu: `product.html?id=telewizor-samsung-55-4k`.
-- Karta produktu premium: cena, badge, opis, porada specjalisty, parametry, opinie, PDF przez drukowanie.
-- Panel dla laika:
-  - Dodaj produkt
-  - Home Builder fundament
-  - Kategorie
-  - Motywy
-  - Smart Media Engine fundament
-  - Użytkownicy / role
-- WoodyBoy jako platforma nadrzędna.
-- Supabase schema pod etap III.
+## Zawartość
+- Home Builder 2.0:
+  - dodawanie sekcji
+  - aktywna / ukryta
+  - przesuwanie góra / dół
+  - typ sekcji: Hero, Produkty, Karuzela producentów, Kategorie, Opinie, Baner, Własna sekcja
+  - autoplay i interwał
+
+- Product Builder:
+  - opis producenta
+  - automatyczne rozpoznanie parametrów
+  - automatyczne badge
+  - promocje z typem i datami
+  - porada specjalisty ELKASS
+  - galeria / Smart Media Engine
+
+- Smart Media Engine:
+  - UI pod JPG, JPEG, PNG, WEBP, HEIC, AVIF
+  - warianty: original, thumb, product, promo, slider, mobile, desktop, pdf
+
+- Komentarze:
+  - opinie przypisane do kategorii
+  - fundament pod losowanie 3–5 opinii na produkcie
+
+- WoodyBoy:
+  - platforma nadrzędna
+  - ELKASS jako pierwszy sklep
+  - role: SUPERADMIN, ADMIN, EDITOR, VIEWER
 
 ## Ważne
-To jest Etap I: wygląd + fundament architektury.
-Etap II doda pełny Smart CMS, automatyczne media, slider/karuzelę/sekcje z panelu.
-Etap III doda Supabase Production.
+Etap II to rozbudowany CMS lokalny/pre-cloud.
+Etap III przenosi zapis do Supabase Auth + Database + Storage.

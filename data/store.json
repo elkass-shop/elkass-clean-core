@@ -2,7 +2,7 @@
   "platform": {
     "id": "woodyboy",
     "name": "WoodyBoy Platform",
-    "version": "8.1 Premium Foundation Stage I"
+    "version": "8.2 Smart CMS + WoodyBoy Stage II"
   },
   "project": {
     "id": "elkass",
@@ -15,51 +15,98 @@
   "settings": {
     "theme": "premium-dark",
     "appearance": "premium",
-    "showAdminLink": true
+    "showAdminLink": true,
+    "stage": "II",
+    "smartCms": true,
+    "smartMediaEngine": true,
+    "homeBuilder": true
   },
   "homeSections": [
     {
       "id": "hero",
       "type": "hero",
       "title": "Elektronika w najlepszym wydaniu",
+      "subtitle": "Premium lokalny sklep RTV/AGD",
       "active": true,
-      "order": 1
+      "order": 1,
+      "style": "premium-dark",
+      "autoplay": false
     },
     {
       "id": "modern",
       "type": "feature",
       "title": "Nowoczesna elektronika dla Twojego domu",
+      "subtitle": "Prosto, lokalnie i profesjonalnie",
       "active": true,
-      "order": 2
+      "order": 2,
+      "style": "glass",
+      "autoplay": false
     },
     {
       "id": "promotions",
-      "type": "promotions",
+      "type": "product-carousel",
       "title": "Promocje i hity",
+      "subtitle": "Aktualne oferty ELKASS",
       "active": true,
       "order": 3,
-      "layout": "four-cards"
+      "source": "promo",
+      "layout": "four-cards",
+      "autoplay": true,
+      "interval": 5000
+    },
+    {
+      "id": "manufacturer",
+      "type": "brand-carousel",
+      "title": "Promocje producentów",
+      "subtitle": "Oferty marek i banery sezonowe",
+      "active": true,
+      "order": 4,
+      "source": "manufacturers",
+      "layout": "carousel",
+      "autoplay": true,
+      "interval": 4000
     },
     {
       "id": "categories",
       "type": "categories",
       "title": "Oferta sklepu",
+      "subtitle": "Najpopularniejsze kategorie",
       "active": true,
-      "order": 4
+      "order": 5,
+      "layout": "grid",
+      "autoplay": false
     },
     {
       "id": "featured",
-      "type": "featured",
+      "type": "product-carousel",
       "title": "Najczęściej wybierane",
+      "subtitle": "Inne produkty niż promocje",
       "active": true,
-      "order": 5
+      "order": 6,
+      "source": "featured",
+      "layout": "four-cards",
+      "autoplay": false
     },
     {
       "id": "why",
       "type": "why",
       "title": "Dlaczego ELKASS?",
+      "subtitle": "Doradztwo, transport, raty i wsparcie",
       "active": true,
-      "order": 6
+      "order": 7,
+      "layout": "benefits",
+      "autoplay": false
+    },
+    {
+      "id": "opinions",
+      "type": "comments",
+      "title": "Opinie klientów",
+      "subtitle": "Zaufanie lokalnego sklepu",
+      "active": true,
+      "order": 8,
+      "layout": "cards",
+      "autoplay": true,
+      "interval": 6000
     }
   ],
   "roles": [
@@ -643,5 +690,52 @@
       "Doceniam lokalny sklep i szybką odpowiedź.",
       "Sprzęt dobrany do potrzeb."
     ]
+  },
+  "manufacturers": [
+    {
+      "id": "samsung",
+      "name": "Samsung",
+      "badge": "Smart TV / AGD",
+      "active": true
+    },
+    {
+      "id": "bosch",
+      "name": "Bosch",
+      "badge": "AGD do domu",
+      "active": true
+    },
+    {
+      "id": "beko",
+      "name": "Beko",
+      "badge": "Pralki i kuchnia",
+      "active": true
+    },
+    {
+      "id": "tcl",
+      "name": "TCL",
+      "badge": "Telewizory i chłodnictwo",
+      "active": true
+    }
+  ],
+  "mediaEngine": {
+    "supportedFormats": [
+      "jpg",
+      "jpeg",
+      "png",
+      "webp",
+      "heic",
+      "avif"
+    ],
+    "variants": [
+      "original",
+      "thumb",
+      "product",
+      "promo",
+      "slider",
+      "mobile",
+      "desktop",
+      "pdf"
+    ],
+    "note": "Etap II zawiera UI i lokalny mechanizm podglądu. Produkcyjne przetwarzanie plików będzie w Etapie III przez Supabase/Edge Functions."
   }
 }

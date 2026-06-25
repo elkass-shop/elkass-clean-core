@@ -82,3 +82,34 @@ create table if not exists settings (
 insert into projects(id,name,owner_email)
 values ('elkass','ELKASS Olesno','woodyboy070@gmail.com')
 on conflict (id) do nothing;
+
+
+-- STAGE II additions
+alter table if exists home_sections add column if not exists autoplay boolean default false;
+alter table if exists home_sections add column if not exists interval_ms int default 5000;
+alter table if exists home_sections add column if not exists layout text default 'grid';
+
+alter table if exists products add column if not exists promo_start date;
+alter table if exists products add column if not exists promo_end date;
+alter table if exists products add column if not exists advisor text;
+
+create table if not exists manufacturers (
+  id text primary key,
+  project_id text default 'elkass',
+  name text not null,
+  badge text,
+  image text,
+  active boolean default true
+);
+
+create table if not exists audit_log (
+  id uuid primary key default gen_random_uuid(),
+  project_id text default 'elkass',
+  actor_email text,
+  action text,
+  entity_type text,
+  entity_id text,
+  before jsonb,
+  after jsonb,
+  created_at timestamptz default now()
+);
