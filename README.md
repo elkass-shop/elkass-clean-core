@@ -1,26 +1,24 @@
-# ELKASS 8.0 CLEAN CORE PRE-CLOUD
+# ELKASS 8.1 PREMIUM FOUNDATION — STAGE I
 
-Czysty rdzeń bez starych hotfixów.
+Pierwsza paczka nowego ELKASS 8.x do pokazania szefowi.
 
-## Aktywne pliki
-- `index.html`
-- `category.html`
-- `product.html`
-- `admin/`
-- `data/store.json`
-- `css/core.css`
-- `js/core.js`
+## Co zawiera
+- Premium Dark + Gold UI w kierunku zaakceptowanej makiety.
+- Strona główna: hero, nowoczesna elektronika, 4 promocje, kategorie, najczęściej wybierane, dlaczego ELKASS.
+- Jeden routing kategorii: `category.html?cat=rtv`.
+- Jeden routing produktu: `product.html?id=telewizor-samsung-55-4k`.
+- Karta produktu premium: cena, badge, opis, porada specjalisty, parametry, opinie, PDF przez drukowanie.
+- Panel dla laika:
+  - Dodaj produkt
+  - Home Builder fundament
+  - Kategorie
+  - Motywy
+  - Smart Media Engine fundament
+  - Użytkownicy / role
+- WoodyBoy jako platforma nadrzędna.
+- Supabase schema pod etap III.
 
-## Zasady
-- Jeden routing: `category.html?cat=ID`
-- Jeden produkt: `product.html?id=ID`
-- WoodyBoy Platform jest nadrzędna
-- ELKASS jest pierwszym sklepem na silniku
-- Panel jest prosty dla pracownika
-
-## Test
-1. Start: `index.html`
-2. Kliknij RTV / AGD / AGD do zabudowy
-3. Wejdź w produkt
-4. Sprawdź PDF przez drukowanie
-5. Panel: `admin/index.html`
+## Ważne
+To jest Etap I: wygląd + fundament architektury.
+Etap II doda pełny Smart CMS, automatyczne media, slider/karuzelę/sekcje z panelu.
+Etap III doda Supabase Production.
