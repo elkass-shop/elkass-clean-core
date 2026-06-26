@@ -1,16 +1,9 @@
 # WoodyBoy Platform
 
-WoodyBoy jest nadrzędnym silnikiem.
+WoodyBoy jest warstwą nadrzędną dla ELKASS i przyszłych projektów.
 
-## Hierarchia
-- SUPERADMIN: WoodyBoy
-- ADMIN: ELKASS
-- EDITOR: pracownik
-- VIEWER: podgląd
-
-## Projekty docelowe
-- ELKASS
-- kolejne sklepy
-- strony firmowe
-- forum
-- landing pages
+## Role
+- SUPERADMIN — WoodyBoy
+- ADMIN — ELKASS
+- EDITOR — pracownik
+- VIEWER — podgląd

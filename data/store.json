@@ -1,19 +1,33 @@
 {
+  "meta": {
+    "name": "ELKASS 8.5 Alpha",
+    "description": "Jedna spójna paczka Alpha — fundament od nowa"
+  },
   "platform": {
     "id": "woodyboy",
     "name": "WoodyBoy Platform",
-    "version": "ELKASS 8.5 Enterprise Premium Stage 1"
+    "version": "8.5 Alpha",
+    "roles": [
+      "SUPERADMIN",
+      "ADMIN",
+      "EDITOR",
+      "VIEWER"
+    ]
   },
   "project": {
+    "id": "elkass",
     "name": "ELKASS Olesno",
     "phone": "34 358 24 42",
     "address": "ul. Pieloka 20, 46-300 Olesno",
     "tagline": "RTV / AGD / AGD DO ZABUDOWY",
-    "googleRating": "4.8"
+    "googleRating": "4.8",
+    "googleLink": "#"
   },
   "settings": {
     "theme": "enterprise",
-    "typography": "compact"
+    "typography": "compact",
+    "logoVariant": "classic-modern",
+    "showAdminLink": true
   },
   "themes": [
     {
@@ -40,51 +54,75 @@
   "homeSections": [
     {
       "id": "hero",
-      "active": true
+      "title": "Hero",
+      "active": true,
+      "order": 1
     },
     {
       "id": "categories",
-      "active": true
+      "title": "Kategorie",
+      "active": true,
+      "order": 2
     },
     {
       "id": "promotions",
-      "active": true
+      "title": "Promocje",
+      "active": true,
+      "order": 3
     },
     {
       "id": "trustbar",
-      "active": true
+      "title": "Pasek korzyści",
+      "active": true,
+      "order": 4
     },
     {
       "id": "featured",
-      "active": true
+      "title": "Najczęściej wybierane",
+      "active": true,
+      "order": 5
     },
     {
       "id": "why",
-      "active": true
+      "title": "Dlaczego warto kupować w ELKASS",
+      "active": true,
+      "order": 6
     },
     {
       "id": "google",
-      "active": true
+      "title": "Opinie Google",
+      "active": true,
+      "order": 7
     },
     {
       "id": "reviews",
-      "active": true
+      "title": "Opinie klientów z Olesna i okolic",
+      "active": true,
+      "order": 8
     },
     {
       "id": "brands",
-      "active": true
+      "title": "Pasek marek",
+      "active": true,
+      "order": 9
     },
     {
       "id": "gallery",
-      "active": true
+      "title": "Galeria ELKASS",
+      "active": true,
+      "order": 10
     },
     {
       "id": "findus",
-      "active": true
+      "title": "Znajdź nas",
+      "active": true,
+      "order": 11
     },
     {
       "id": "contact",
-      "active": true
+      "title": "Kontakt",
+      "active": true,
+      "order": 12
     }
   ],
   "categories": [
@@ -124,6 +162,19 @@
         "piekarniki",
         "plyty-indukcyjne",
         "okapy"
+      ],
+      "home": true,
+      "active": true
+    },
+    {
+      "id": "male-agd",
+      "name": "Małe AGD",
+      "icon": "☕",
+      "description": "Ekspresy, czajniki, tostery i drobny sprzęt",
+      "children": [
+        "ekspresy",
+        "czajniki",
+        "tostery"
       ],
       "home": true,
       "active": true
@@ -196,6 +247,27 @@
       "name": "Okapy",
       "parent": "agd-zabudowa",
       "description": "Okapy kuchenne",
+      "active": true
+    },
+    {
+      "id": "ekspresy",
+      "name": "Ekspresy",
+      "parent": "male-agd",
+      "description": "Automatyczne i kolbowe",
+      "active": true
+    },
+    {
+      "id": "czajniki",
+      "name": "Czajniki",
+      "parent": "male-agd",
+      "description": "Czajniki elektryczne",
+      "active": true
+    },
+    {
+      "id": "tostery",
+      "name": "Tostery",
+      "parent": "male-agd",
+      "description": "Tostery do kuchni",
       "active": true
     }
   ],
@@ -376,6 +448,36 @@
       "description": "Odkurzacz pionowy premium do wygodnego sprzątania domu bez kabla.",
       "advisor": "Dla klientów, którzy chcą wygodne sprzątanie i wysoką skuteczność bez wyciągania tradycyjnego odkurzacza.",
       "stock": 1,
+      "active": true
+    },
+    {
+      "id": "ekspres-delonghi-ecam",
+      "name": "Ekspres De’Longhi ECAM",
+      "category": "ekspresy",
+      "price": "2 799,00 zł",
+      "oldPrice": "3 299,00 zł",
+      "discount": "-15%",
+      "promo": true,
+      "featured": true,
+      "image": "assets/products/coffee.svg",
+      "badges": [
+        "Automat",
+        "Kawa",
+        "Premium"
+      ],
+      "features": [
+        "Espresso",
+        "Latte",
+        "Cappuccino"
+      ],
+      "specs": {
+        "Typ": "Automatyczny",
+        "Napoje": "Espresso, Latte, Cappuccino",
+        "Młynek": "Tak"
+      },
+      "description": "Ekspres automatyczny De’Longhi do kaw mlecznych i klasycznych. Dobra propozycja do domu i małego biura.",
+      "advisor": "Polecamy klientom, którzy chcą wygodnie robić kawy mleczne bez ręcznego spieniania.",
+      "stock": 2,
       "active": true
     }
   ],

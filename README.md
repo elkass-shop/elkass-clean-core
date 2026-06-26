@@ -1,30 +1,31 @@
-# ELKASS 8.5 ENTERPRISE PREMIUM — STAGE 1
+# ELKASS 8.5 Alpha
 
-To jest przebudowa fundamentu, nie hotfix.
+Jedna spójna paczka Alpha — nowy fundament, nie kolejna poprawka.
 
 ## Zawiera
-- Premium header z wyszukiwarką, telefonem, adresem, kontem i koszykiem.
-- Mniejszą typografię Compact.
-- Kategorie i podkategorie z jednym routingiem `category.html?cat=...`.
-- Stronę produktu z kolejnością:
-  1. galeria / zdjęcie,
-  2. cena i dostępność,
-  3. najważniejsze cechy,
-  4. parametry techniczne,
-  5. opis produktu,
-  6. porada specjalisty ELKASS,
-  7. opinie,
-  8. podobne produkty.
+- Premium/Enterprise header z wyszukiwarką, telefonem, adresem, kontem i koszykiem.
+- Compact typography, czyli mniejsze fonty i bardziej sklepowy układ.
 - Sekcje ze starego sklepu w nowej odsłonie:
   - Dlaczego warto kupować w ELKASS
   - Opinie Google
-  - Opinie lokalnych klientów
+  - Opinie klientów z Olesna i okolic
   - Galeria ELKASS
   - Znajdź nas
-  - Pasek marek
+  - Pasek producentów
   - Pasek korzyści
-- Panel fundament:
+- Routing kategorii i podkategorii.
+- Karta produktu z kolejnością:
+  1. zdjęcie / cena / dostępność / cechy,
+  2. parametry techniczne,
+  3. opis,
+  4. porada specjalisty,
+  5. opinie,
+  6. podobne produkty.
+- Panel:
   - Home Builder
   - Product Builder
-  - Motywy
-- WoodyBoy jako platforma nadrzędna.
+  - Theme Builder
+  - Brand Builder
+  - Reviews Builder
+- WoodyBoy Platform jako warstwa nadrzędna.
+- Supabase-ready schema.
