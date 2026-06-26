@@ -1,16 +1,98 @@
 {
-  "project": {
-    "name": "ELKASS OLESNO",
-    "phone": "+48 34 358 20 20",
-    "address": "Olesno, ul. Pieloka 20",
-    "tagline": "RTV / AGD / AGD DO ZABUDOWY"
+  "platform": {
+    "id": "woodyboy",
+    "name": "WoodyBoy Platform",
+    "version": "ELKASS 8.5 Enterprise Premium Stage 1"
   },
+  "project": {
+    "name": "ELKASS Olesno",
+    "phone": "34 358 24 42",
+    "address": "ul. Pieloka 20, 46-300 Olesno",
+    "tagline": "RTV / AGD / AGD DO ZABUDOWY",
+    "googleRating": "4.8"
+  },
+  "settings": {
+    "theme": "enterprise",
+    "typography": "compact"
+  },
+  "themes": [
+    {
+      "id": "enterprise",
+      "name": "ELKASS Enterprise"
+    },
+    {
+      "id": "classic",
+      "name": "ELKASS Classic"
+    },
+    {
+      "id": "neopunkt",
+      "name": "NeoPunkt"
+    },
+    {
+      "id": "black-friday",
+      "name": "Black Friday"
+    },
+    {
+      "id": "christmas",
+      "name": "Święta"
+    }
+  ],
+  "homeSections": [
+    {
+      "id": "hero",
+      "active": true
+    },
+    {
+      "id": "categories",
+      "active": true
+    },
+    {
+      "id": "promotions",
+      "active": true
+    },
+    {
+      "id": "trustbar",
+      "active": true
+    },
+    {
+      "id": "featured",
+      "active": true
+    },
+    {
+      "id": "why",
+      "active": true
+    },
+    {
+      "id": "google",
+      "active": true
+    },
+    {
+      "id": "reviews",
+      "active": true
+    },
+    {
+      "id": "brands",
+      "active": true
+    },
+    {
+      "id": "gallery",
+      "active": true
+    },
+    {
+      "id": "findus",
+      "active": true
+    },
+    {
+      "id": "contact",
+      "active": true
+    }
+  ],
   "categories": [
     {
       "id": "rtv",
       "name": "RTV",
-      "icon": "▭",
-      "description": "Telewizory, audio, sprzęt multimedialny i akcesoria",
+      "icon": "📺",
+      "description": "Telewizory, audio i multimedia",
       "children": [
         "telewizory",
         "audio",
@@ -22,21 +104,22 @@
     {
       "id": "agd",
       "name": "AGD",
-      "icon": "◉",
-      "description": "Pralki, lodówki, zmywarki, piekarniki i więcej",
+      "icon": "❄️",
+      "description": "Pralki, lodówki, zmywarki, odkurzacze",
       "children": [
         "pralki",
         "lodowki",
-        "zmywarki"
+        "zmywarki",
+        "odkurzacze"
       ],
       "home": true,
       "active": true
     },
     {
       "id": "agd-zabudowa",
-      "name": "AGD DO ZABUDOWY",
-      "icon": "▣",
-      "description": "Piekarniki, płyty, okapy, zmywarki do zabudowy",
+      "name": "AGD do zabudowy",
+      "icon": "🔥",
+      "description": "Piekarniki, płyty, okapy i kuchnie",
       "children": [
         "piekarniki",
         "plyty-indukcyjne",
@@ -49,28 +132,28 @@
       "id": "telewizory",
       "name": "Telewizory",
       "parent": "rtv",
-      "description": "Telewizory premium",
+      "description": "Smart TV, QLED, OLED, 4K",
       "active": true
     },
     {
       "id": "audio",
       "name": "Audio",
       "parent": "rtv",
-      "description": "Audio i soundbary",
+      "description": "Audio, głośniki i kino domowe",
       "active": true
     },
     {
       "id": "soundbary",
       "name": "Soundbary",
       "parent": "rtv",
-      "description": "Dźwięk TV",
+      "description": "Dźwięk do telewizora",
       "active": true
     },
     {
       "id": "pralki",
       "name": "Pralki",
       "parent": "agd",
-      "description": "Pralki slim i pełne",
+      "description": "Slim i pełnowymiarowe",
       "active": true
     },
     {
@@ -88,10 +171,17 @@
       "active": true
     },
     {
+      "id": "odkurzacze",
+      "name": "Odkurzacze",
+      "parent": "agd",
+      "description": "Klasyczne i pionowe",
+      "active": true
+    },
+    {
       "id": "piekarniki",
       "name": "Piekarniki",
       "parent": "agd-zabudowa",
-      "description": "Piekarniki do zabudowy",
+      "description": "Do zabudowy",
       "active": true
     },
     {
@@ -109,6 +199,26 @@
       "active": true
     }
   ],
+  "brands": [
+    "Samsung",
+    "Bosch",
+    "Siemens",
+    "LG",
+    "Sony",
+    "Philips",
+    "Beko",
+    "Whirlpool",
+    "Amica",
+    "Electrolux",
+    "TCL",
+    "Hisense",
+    "De'Longhi",
+    "Dyson",
+    "Gorenje",
+    "Sharp",
+    "Panasonic",
+    "Miele"
+  ],
   "products": [
     {
       "id": "telewizor-samsung-qe55",
@@ -119,32 +229,28 @@
       "discount": "-15%",
       "promo": true,
       "featured": true,
+      "image": "assets/products/tv.svg",
       "badges": [
         "QLED",
         "55”",
-        "Smart TV"
-      ],
-      "features": [
-        "QLED",
-        "55 cali",
         "Smart TV",
         "HDR"
       ],
-      "advisor": "Dobry wybór do salonu, filmów i sportu. Polecany dla klientów, którzy chcą mocny obraz i prostą obsługę.",
+      "features": [
+        "Obraz QLED",
+        "Smart TV",
+        "HDR",
+        "Idealny do salonu"
+      ],
       "specs": {
         "Przekątna": "55 cali",
         "Technologia": "QLED",
+        "Rozdzielczość": "4K UHD",
         "Smart TV": "Tak",
         "HDR": "Tak"
       },
-      "description": "Telewizor Samsung QLED z bardzo dobrym obrazem, funkcjami Smart TV i eleganckim wyglądem.",
-      "images": [
-        "assets/products/tv.svg"
-      ],
-      "media": {
-        "main": "assets/products/tv.svg",
-        "promo": "assets/products/tv.svg"
-      },
+      "description": "Telewizor Samsung QLED z bardzo dobrym obrazem, funkcjami Smart TV i eleganckim wyglądem. Sprawdzi się w salonie do filmów, sportu i codziennej rozrywki.",
+      "advisor": "Polecamy do salonu 20–30 m². Dobry wybór, jeśli klient chce mocny obraz, prostą obsługę i Smart TV bez kombinowania.",
       "stock": 2,
       "active": true
     },
@@ -157,31 +263,89 @@
       "discount": "-20%",
       "promo": true,
       "featured": true,
+      "image": "assets/products/washer.svg",
       "badges": [
         "8 kg",
         "Eco Bubble",
         "1200 obr."
       ],
       "features": [
-        "8 kg",
+        "8 kg załadunku",
         "Eco Bubble",
-        "Program szybki"
+        "Program szybki",
+        "Wygodna obsługa"
       ],
-      "advisor": "Praktyczna pralka dla rodziny. Dobra pojemność i wygodne programy do codziennego prania.",
       "specs": {
         "Załadunek": "8 kg",
         "Obroty": "1200 obr./min",
-        "Technologia": "Eco Bubble"
+        "Technologia": "Eco Bubble",
+        "Typ": "Wolnostojąca"
       },
-      "description": "Nowoczesna pralka Samsung z programami do codziennego prania i wygodną obsługą.",
-      "images": [
-        "assets/products/washer.svg"
-      ],
-      "media": {
-        "main": "assets/products/washer.svg",
-        "promo": "assets/products/washer.svg"
-      },
+      "description": "Nowoczesna pralka Samsung z programami do codziennego prania i technologią wspierającą skuteczne usuwanie zabrudzeń.",
+      "advisor": "Praktyczna pralka dla rodziny. Dobra pojemność i wygodne programy do codziennego prania.",
       "stock": 3,
+      "active": true
+    },
+    {
+      "id": "lodowka-tcl-rp318",
+      "name": "Lodówka TCL RP318BXE2",
+      "category": "lodowki",
+      "price": "1 699,00 zł",
+      "oldPrice": "1 931,00 zł",
+      "discount": "-12%",
+      "promo": true,
+      "featured": true,
+      "image": "assets/products/fridge.svg",
+      "badges": [
+        "No Frost",
+        "Cicha",
+        "LED"
+      ],
+      "features": [
+        "Pełny No Frost",
+        "Pojemna chłodziarka",
+        "Cicha praca",
+        "Oświetlenie LED"
+      ],
+      "specs": {
+        "Wymiary": "185 x 59,5 x 63 cm",
+        "Pojemność": "219/99 l",
+        "No Frost": "Pełny No Frost",
+        "Poziom hałasu": "37 dB"
+      },
+      "description": "Lodówka TCL dla domu i mieszkania. Zapewnia wygodną organizację żywności, prostą obsługę i nowoczesny wygląd.",
+      "advisor": "Dobry wybór dla kuchni, gdzie ważna jest pojemność i bezobsługowe rozmrażanie.",
+      "stock": 2,
+      "active": true
+    },
+    {
+      "id": "piekarnik-samsung-nv7",
+      "name": "Piekarnik Samsung NV7B44305AK",
+      "category": "piekarniki",
+      "price": "1 799,00 zł",
+      "oldPrice": "2 367,00 zł",
+      "discount": "-24%",
+      "promo": true,
+      "featured": false,
+      "image": "assets/products/oven.svg",
+      "badges": [
+        "Termoobieg",
+        "Air Fry",
+        "Premium"
+      ],
+      "features": [
+        "Termoobieg",
+        "Air Fry",
+        "Nowoczesny design"
+      ],
+      "specs": {
+        "Typ": "Do zabudowy",
+        "Funkcje": "Termoobieg, Grill, Air Fry",
+        "Kolor": "Czarny"
+      },
+      "description": "Piekarnik do nowoczesnej kuchni z funkcjami wygodnego pieczenia i eleganckim wykończeniem.",
+      "advisor": "Dla kuchni, w której ważna jest wygoda pieczenia i spójny wygląd zabudowy.",
+      "stock": 2,
       "active": true
     },
     {
@@ -191,103 +355,54 @@
       "price": "2 699,00 zł",
       "oldPrice": "2 999,00 zł",
       "discount": "-10%",
-      "promo": true,
+      "promo": false,
       "featured": true,
+      "image": "assets/products/vacuum.svg",
       "badges": [
         "Bezprzewodowy",
         "Mocny",
         "Premium"
       ],
       "features": [
-        "Bezprzewodowy",
-        "Mocne ssanie",
+        "Bez kabla",
+        "Wysoka skuteczność",
         "Do domu"
       ],
-      "advisor": "Dla klientów, którzy chcą wygodne sprzątanie bez kabla i wysoką skuteczność.",
       "specs": {
-        "Typ": "Bezprzewodowy",
-        "Zastosowanie": "Dom / mieszkanie"
+        "Typ": "Pionowy bezprzewodowy",
+        "Zastosowanie": "Dom / mieszkanie",
+        "Filtracja": "Zaawansowana"
       },
-      "description": "Odkurzacz pionowy premium do wygodnego sprzątania domu.",
-      "images": [
-        "assets/products/vacuum.svg"
-      ],
-      "media": {
-        "main": "assets/products/vacuum.svg",
-        "promo": "assets/products/vacuum.svg"
-      },
+      "description": "Odkurzacz pionowy premium do wygodnego sprzątania domu bez kabla.",
+      "advisor": "Dla klientów, którzy chcą wygodne sprzątanie i wysoką skuteczność bez wyciągania tradycyjnego odkurzacza.",
       "stock": 1,
       "active": true
-    },
-    {
-      "id": "ekspres-delonghi-ecam",
-      "name": "Ekspres De’Longhi ECAM 550.65.SB",
-      "category": "male-agd",
-      "price": "2 799,00 zł",
-      "oldPrice": "3 299,00 zł",
-      "discount": "-15%",
-      "promo": true,
-      "featured": true,
-      "badges": [
-        "Kawa",
-        "Automat",
-        "Premium"
-      ],
-      "features": [
-        "Automatyczny",
-        "Cappuccino",
-        "Latte"
-      ],
-      "advisor": "Dla miłośników kawy, którzy chcą wygodny ekspres automatyczny do domu.",
-      "specs": {
-        "Typ": "Automatyczny",
-        "Napoje": "Espresso, Latte, Cappuccino"
-      },
-      "description": "Ekspres automatyczny De’Longhi do kaw mlecznych i klasycznych.",
-      "images": [
-        "assets/products/coffee.svg"
-      ],
-      "media": {
-        "main": "assets/products/coffee.svg",
-        "promo": "assets/products/coffee.svg"
-      },
-      "stock": 2,
-      "active": true
     }
   ],
-  "comments": {
-    "default": [
-      "Profesjonalna obsługa i szybka pomoc przy wyborze.",
-      "Dobry kontakt i lokalny sklep, do którego warto wrócić.",
-      "Sprzęt dobrany do potrzeb, bez wciskania na siłę."
+  "reviews": {
+    "google": [
+      "Profesjonalna obsługa i szybka pomoc przy wyborze sprzętu.",
+      "Polecam sklep ELKASS, bardzo dobry kontakt i doradztwo.",
+      "Sprzęt dobrany do potrzeb, transport i wszystko sprawnie."
+    ],
+    "local": [
+      "Kupuję tutaj od lat. Dobra obsługa i normalne podejście do klienta.",
+      "Pomogli dobrać pralkę do małej łazienki.",
+      "Lokalny sklep, któremu można zaufać."
     ]
   },
-  "homeSections": [
+  "gallery": [
     {
-      "id": "hero",
-      "active": true
+      "title": "Salon ELKASS",
+      "image": "assets/store/store.svg"
     },
     {
-      "id": "promotions",
-      "active": true
+      "title": "Ekspozycja RTV/AGD",
+      "image": "assets/store/store.svg"
     },
     {
-      "id": "categories",
-      "active": true
-    }
-  ],
-  "manufacturers": [
-    {
-      "name": "Samsung"
-    },
-    {
-      "name": "Bosch"
-    },
-    {
-      "name": "Beko"
-    },
-    {
-      "name": "TCL"
+      "title": "Fachowe doradztwo",
+      "image": "assets/store/store.svg"
     }
   ]
 }

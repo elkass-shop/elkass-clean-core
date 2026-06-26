@@ -1,18 +1,30 @@
-# ELKASS 8.1B PREMIUM UI MATCH
+# ELKASS 8.5 ENTERPRISE PREMIUM — STAGE 1
 
-Ta paczka poprawia najważniejszą rzecz: wygląd frontu zgodnie z zaakceptowaną makietą dark/gold.
+To jest przebudowa fundamentu, nie hotfix.
 
 ## Zawiera
-- header jak w makiecie: logo, wyszukiwarka, telefon, salon, konto, koszyk
-- menu z kategoriami i strefą klienta
-- duży hero RTV/AGD
-- trzy kafle kategorii
-- cztery kafle promocji
-- pasek korzyści
-- sekcję polecanych i Dlaczego ELKASS
-- routing kategorii i produktu
-- produkt z poradą specjalisty i PDF przez drukowanie
-
-## Cel
-To jest paczka UI do pokazania szefowi jako kierunek premium.
-Etap II/III CMS i Supabase zostają, ale wygląd musi iść w tym kierunku.
+- Premium header z wyszukiwarką, telefonem, adresem, kontem i koszykiem.
+- Mniejszą typografię Compact.
+- Kategorie i podkategorie z jednym routingiem `category.html?cat=...`.
+- Stronę produktu z kolejnością:
+  1. galeria / zdjęcie,
+  2. cena i dostępność,
+  3. najważniejsze cechy,
+  4. parametry techniczne,
+  5. opis produktu,
+  6. porada specjalisty ELKASS,
+  7. opinie,
+  8. podobne produkty.
+- Sekcje ze starego sklepu w nowej odsłonie:
+  - Dlaczego warto kupować w ELKASS
+  - Opinie Google
+  - Opinie lokalnych klientów
+  - Galeria ELKASS
+  - Znajdź nas
+  - Pasek marek
+  - Pasek korzyści
+- Panel fundament:
+  - Home Builder
+  - Product Builder
+  - Motywy
+- WoodyBoy jako platforma nadrzędna.
