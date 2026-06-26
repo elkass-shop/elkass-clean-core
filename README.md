@@ -1,29 +1,25 @@
-# ELKASS 8.5 Beta
+# ELKASS 8.5 RC
 
-Jedna spójna paczka Beta po Alpha.
+Release Candidate — spójna paczka po Alpha do testów przed produkcją.
 
-## Co dodaje Beta
-- Rozbudowany panel WoodyBoy / ELKASS.
-- Dashboard.
-- Home Builder z kolejnością sekcji i aktywna/ukryta.
-- Dodawanie nowych sekcji.
-- Product Builder z parserem opisu producenta.
-- Automatyczne badge z tekstu producenta.
-- Promocje z typem oraz datami start/koniec.
-- Kopie robocze produktu.
-- Smart Media Engine UI:
-  - JPG
-  - JPEG
-  - PNG
-  - WEBP
-  - HEIC
-  - AVIF
-  - warianty: original, thumb, product, promo, slider, mobile, desktop, pdf
-- Reviews Builder.
-- Brand Builder.
-- Theme Builder.
-- Supabase Setup.
+## Zawiera
+- Front ELKASS 8.5 z sekcjami starego sklepu w nowym UI.
+- Produkt: parametry techniczne przed opisem.
+- Panel RC:
+  - Home Builder
+  - Product Builder z parserem
+  - Theme Builder
+  - Brand Builder
+  - Reviews Builder
+  - Smart Media Engine
+  - RC Checklist
+- Supabase-ready schema i polityki.
+- WoodyBoy jako warstwa nadrzędna.
 
-## Ważne
-To nadal wersja pre-production. Zapisy w panelu działają lokalnie przez localStorage.
-Produkcja: Supabase Auth + Database + Storage + Edge Functions.
+## Testy
+Uruchom:
+- `index.html`
+- `category.html?cat=rtv`
+- `category.html?cat=agd`
+- `product.html?id=telewizor-samsung-qe55`
+- `admin/index.html`
