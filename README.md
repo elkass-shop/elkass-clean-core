@@ -1,31 +1,29 @@
-# ELKASS 8.5 Alpha
+# ELKASS 8.5 Beta
 
-Jedna spójna paczka Alpha — nowy fundament, nie kolejna poprawka.
+Jedna spójna paczka Beta po Alpha.
 
-## Zawiera
-- Premium/Enterprise header z wyszukiwarką, telefonem, adresem, kontem i koszykiem.
-- Compact typography, czyli mniejsze fonty i bardziej sklepowy układ.
-- Sekcje ze starego sklepu w nowej odsłonie:
-  - Dlaczego warto kupować w ELKASS
-  - Opinie Google
-  - Opinie klientów z Olesna i okolic
-  - Galeria ELKASS
-  - Znajdź nas
-  - Pasek producentów
-  - Pasek korzyści
-- Routing kategorii i podkategorii.
-- Karta produktu z kolejnością:
-  1. zdjęcie / cena / dostępność / cechy,
-  2. parametry techniczne,
-  3. opis,
-  4. porada specjalisty,
-  5. opinie,
-  6. podobne produkty.
-- Panel:
-  - Home Builder
-  - Product Builder
-  - Theme Builder
-  - Brand Builder
-  - Reviews Builder
-- WoodyBoy Platform jako warstwa nadrzędna.
-- Supabase-ready schema.
+## Co dodaje Beta
+- Rozbudowany panel WoodyBoy / ELKASS.
+- Dashboard.
+- Home Builder z kolejnością sekcji i aktywna/ukryta.
+- Dodawanie nowych sekcji.
+- Product Builder z parserem opisu producenta.
+- Automatyczne badge z tekstu producenta.
+- Promocje z typem oraz datami start/koniec.
+- Kopie robocze produktu.
+- Smart Media Engine UI:
+  - JPG
+  - JPEG
+  - PNG
+  - WEBP
+  - HEIC
+  - AVIF
+  - warianty: original, thumb, product, promo, slider, mobile, desktop, pdf
+- Reviews Builder.
+- Brand Builder.
+- Theme Builder.
+- Supabase Setup.
+
+## Ważne
+To nadal wersja pre-production. Zapisy w panelu działają lokalnie przez localStorage.
+Produkcja: Supabase Auth + Database + Storage + Edge Functions.

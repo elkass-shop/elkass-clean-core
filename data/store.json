@@ -1,12 +1,12 @@
 {
   "meta": {
-    "name": "ELKASS 8.5 Alpha",
-    "description": "Jedna spójna paczka Alpha — fundament od nowa"
+    "name": "ELKASS 8.5 Beta",
+    "description": "Beta: Smart CMS, builders, media engine UI, panel dla laika"
   },
   "platform": {
     "id": "woodyboy",
     "name": "WoodyBoy Platform",
-    "version": "8.5 Alpha",
+    "version": "8.5 Beta",
     "roles": [
       "SUPERADMIN",
       "ADMIN",
@@ -27,7 +27,8 @@
     "theme": "enterprise",
     "typography": "compact",
     "logoVariant": "classic-modern",
-    "showAdminLink": true
+    "showAdminLink": true,
+    "beta": true
   },
   "themes": [
     {
@@ -56,73 +57,121 @@
       "id": "hero",
       "title": "Hero",
       "active": true,
-      "order": 1
+      "order": 1,
+      "type": "hero",
+      "editable": true,
+      "pinned": false,
+      "scheduled": false
     },
     {
       "id": "categories",
       "title": "Kategorie",
       "active": true,
-      "order": 2
+      "order": 2,
+      "type": "categories",
+      "editable": true,
+      "pinned": false,
+      "scheduled": false
     },
     {
       "id": "promotions",
       "title": "Promocje",
       "active": true,
-      "order": 3
+      "order": 3,
+      "type": "promotions",
+      "editable": true,
+      "pinned": false,
+      "scheduled": false
     },
     {
       "id": "trustbar",
       "title": "Pasek korzyści",
       "active": true,
-      "order": 4
+      "order": 4,
+      "type": "trustbar",
+      "editable": true,
+      "pinned": false,
+      "scheduled": false
     },
     {
       "id": "featured",
       "title": "Najczęściej wybierane",
       "active": true,
-      "order": 5
+      "order": 5,
+      "type": "featured",
+      "editable": true,
+      "pinned": false,
+      "scheduled": false
     },
     {
       "id": "why",
       "title": "Dlaczego warto kupować w ELKASS",
       "active": true,
-      "order": 6
+      "order": 6,
+      "type": "why",
+      "editable": true,
+      "pinned": false,
+      "scheduled": false
     },
     {
       "id": "google",
       "title": "Opinie Google",
       "active": true,
-      "order": 7
+      "order": 7,
+      "type": "google",
+      "editable": true,
+      "pinned": false,
+      "scheduled": false
     },
     {
       "id": "reviews",
       "title": "Opinie klientów z Olesna i okolic",
       "active": true,
-      "order": 8
+      "order": 8,
+      "type": "reviews",
+      "editable": true,
+      "pinned": false,
+      "scheduled": false
     },
     {
       "id": "brands",
       "title": "Pasek marek",
       "active": true,
-      "order": 9
+      "order": 9,
+      "type": "brands",
+      "editable": true,
+      "pinned": false,
+      "scheduled": false
     },
     {
       "id": "gallery",
       "title": "Galeria ELKASS",
       "active": true,
-      "order": 10
+      "order": 10,
+      "type": "gallery",
+      "editable": true,
+      "pinned": false,
+      "scheduled": false
     },
     {
       "id": "findus",
       "title": "Znajdź nas",
       "active": true,
-      "order": 11
+      "order": 11,
+      "type": "findus",
+      "editable": true,
+      "pinned": false,
+      "scheduled": false
     },
     {
       "id": "contact",
       "title": "Kontakt",
       "active": true,
-      "order": 12
+      "order": 12,
+      "type": "contact",
+      "editable": true,
+      "pinned": false,
+      "scheduled": false
     }
   ],
   "categories": [
@@ -324,7 +373,17 @@
       "description": "Telewizor Samsung QLED z bardzo dobrym obrazem, funkcjami Smart TV i eleganckim wyglądem. Sprawdzi się w salonie do filmów, sportu i codziennej rozrywki.",
       "advisor": "Polecamy do salonu 20–30 m². Dobry wybór, jeśli klient chce mocny obraz, prostą obsługę i Smart TV bez kombinowania.",
       "stock": 2,
-      "active": true
+      "active": true,
+      "promotion": {
+        "type": "promotion",
+        "start": "",
+        "end": ""
+      },
+      "draft": false,
+      "seo": {
+        "title": "Telewizor Samsung QE55QLED80T - ELKASS Olesno",
+        "description": "Telewizor Samsung QLED z bardzo dobrym obrazem, funkcjami Smart TV i eleganckim wyglądem. Sprawdzi się w salonie do filmów, sportu i codziennej rozryw"
+      }
     },
     {
       "id": "pralka-samsung-ww80",
@@ -356,7 +415,17 @@
       "description": "Nowoczesna pralka Samsung z programami do codziennego prania i technologią wspierającą skuteczne usuwanie zabrudzeń.",
       "advisor": "Praktyczna pralka dla rodziny. Dobra pojemność i wygodne programy do codziennego prania.",
       "stock": 3,
-      "active": true
+      "active": true,
+      "promotion": {
+        "type": "promotion",
+        "start": "",
+        "end": ""
+      },
+      "draft": false,
+      "seo": {
+        "title": "Pralka Samsung WW80T554AAX - ELKASS Olesno",
+        "description": "Nowoczesna pralka Samsung z programami do codziennego prania i technologią wspierającą skuteczne usuwanie zabrudzeń."
+      }
     },
     {
       "id": "lodowka-tcl-rp318",
@@ -388,7 +457,17 @@
       "description": "Lodówka TCL dla domu i mieszkania. Zapewnia wygodną organizację żywności, prostą obsługę i nowoczesny wygląd.",
       "advisor": "Dobry wybór dla kuchni, gdzie ważna jest pojemność i bezobsługowe rozmrażanie.",
       "stock": 2,
-      "active": true
+      "active": true,
+      "promotion": {
+        "type": "promotion",
+        "start": "",
+        "end": ""
+      },
+      "draft": false,
+      "seo": {
+        "title": "Lodówka TCL RP318BXE2 - ELKASS Olesno",
+        "description": "Lodówka TCL dla domu i mieszkania. Zapewnia wygodną organizację żywności, prostą obsługę i nowoczesny wygląd."
+      }
     },
     {
       "id": "piekarnik-samsung-nv7",
@@ -418,7 +497,17 @@
       "description": "Piekarnik do nowoczesnej kuchni z funkcjami wygodnego pieczenia i eleganckim wykończeniem.",
       "advisor": "Dla kuchni, w której ważna jest wygoda pieczenia i spójny wygląd zabudowy.",
       "stock": 2,
-      "active": true
+      "active": true,
+      "promotion": {
+        "type": "promotion",
+        "start": "",
+        "end": ""
+      },
+      "draft": false,
+      "seo": {
+        "title": "Piekarnik Samsung NV7B44305AK - ELKASS Olesno",
+        "description": "Piekarnik do nowoczesnej kuchni z funkcjami wygodnego pieczenia i eleganckim wykończeniem."
+      }
     },
     {
       "id": "odkurzacz-dyson-v15",
@@ -448,7 +537,17 @@
       "description": "Odkurzacz pionowy premium do wygodnego sprzątania domu bez kabla.",
       "advisor": "Dla klientów, którzy chcą wygodne sprzątanie i wysoką skuteczność bez wyciągania tradycyjnego odkurzacza.",
       "stock": 1,
-      "active": true
+      "active": true,
+      "promotion": {
+        "type": "none",
+        "start": "",
+        "end": ""
+      },
+      "draft": false,
+      "seo": {
+        "title": "Odkurzacz Dyson V15 Detect - ELKASS Olesno",
+        "description": "Odkurzacz pionowy premium do wygodnego sprzątania domu bez kabla."
+      }
     },
     {
       "id": "ekspres-delonghi-ecam",
@@ -478,7 +577,17 @@
       "description": "Ekspres automatyczny De’Longhi do kaw mlecznych i klasycznych. Dobra propozycja do domu i małego biura.",
       "advisor": "Polecamy klientom, którzy chcą wygodnie robić kawy mleczne bez ręcznego spieniania.",
       "stock": 2,
-      "active": true
+      "active": true,
+      "promotion": {
+        "type": "promotion",
+        "start": "",
+        "end": ""
+      },
+      "draft": false,
+      "seo": {
+        "title": "Ekspres De’Longhi ECAM - ELKASS Olesno",
+        "description": "Ekspres automatyczny De’Longhi do kaw mlecznych i klasycznych. Dobra propozycja do domu i małego biura."
+      }
     }
   ],
   "reviews": {
@@ -505,6 +614,80 @@
     {
       "title": "Fachowe doradztwo",
       "image": "assets/store/store.svg"
+    }
+  ],
+  "mediaEngine": {
+    "supportedFormats": [
+      "jpg",
+      "jpeg",
+      "png",
+      "webp",
+      "heic",
+      "avif"
+    ],
+    "variants": [
+      "original",
+      "thumb",
+      "product",
+      "promo",
+      "slider",
+      "mobile",
+      "desktop",
+      "pdf"
+    ],
+    "mode": "ui-ready-local-preview",
+    "production": "Supabase Storage + Edge Functions"
+  },
+  "adminModules": [
+    {
+      "id": "dashboard",
+      "name": "Dashboard",
+      "active": true
+    },
+    {
+      "id": "home",
+      "name": "Home Builder",
+      "active": true
+    },
+    {
+      "id": "products",
+      "name": "Product Builder",
+      "active": true
+    },
+    {
+      "id": "promotions",
+      "name": "Promotion Builder",
+      "active": true
+    },
+    {
+      "id": "media",
+      "name": "Smart Media Engine",
+      "active": true
+    },
+    {
+      "id": "gallery",
+      "name": "Gallery Builder",
+      "active": true
+    },
+    {
+      "id": "reviews",
+      "name": "Reviews Builder",
+      "active": true
+    },
+    {
+      "id": "brands",
+      "name": "Brand Builder",
+      "active": true
+    },
+    {
+      "id": "themes",
+      "name": "Theme Builder",
+      "active": true
+    },
+    {
+      "id": "supabase",
+      "name": "Supabase Setup",
+      "active": true
     }
   ]
 }
